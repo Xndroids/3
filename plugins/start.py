@@ -148,7 +148,6 @@ async def start_command(client: Client, message: Message):
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton("»  ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪғʏ  «", url=link)],
                     [InlineKeyboardButton("» ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ/ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ «", url=TUT_VID)],
-                    [InlineKeyboardButton("🎁 ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ", callback_data="buy_premium")]
                 ])
             )
                             
