@@ -29,8 +29,8 @@ async def top_anime_command(client: Client, message: Message):
         keyboard = [[InlineKeyboardButton(f"{style_anime_title(anime.get('title'))}", callback_data=f'detail_{anime.get("mal_id")}')] 
                     for anime in top_anime_list[:10]]
         keyboard.extend([
-            [InlineKeyboardButton("• ғᴏʀ ", url='t.me/anime_raven'),
-             InlineKeyboardButton(" ᴍᴏʀᴇ •", url='t.me/anime_raven')],
+            [InlineKeyboardButton("• ғᴏʀ ", url='https://t.me/Xndroids'),
+             InlineKeyboardButton(" ᴍᴏʀᴇ •", url='https://t.me/Xndroids')],
             [InlineKeyboardButton("•  ᴄʟᴏsᴇ  •", callback_data='close')]
              ])
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -55,8 +55,8 @@ async def weekly_anime_command(client: Client, message: Message):
         keyboard = [[InlineKeyboardButton(f"{style_anime_title(anime.get('title'))}", callback_data=f'detail_{anime.get("mal_id")}')] 
                     for anime in weekly_anime_list[:10]]
         keyboard.extend([
-            [InlineKeyboardButton("• ғᴏʀ ", url='t.me/anime_raven'),
-             InlineKeyboardButton(" ᴍᴏʀᴇ •", url='t.me/anime_raven')],
+            [InlineKeyboardButton("• ғᴏʀ ", url='https://t.me/Xndroids'),
+             InlineKeyboardButton(" ᴍᴏʀᴇ •", url='https://t.me/Xndroids')],
             [InlineKeyboardButton("•  ᴄʟᴏsᴇ  •", callback_data='close')]
              ])
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -86,8 +86,8 @@ async def search_anime_command(client: Client, message: Message):
         keyboard = [[InlineKeyboardButton(f"{get_anime_emoji(anime.get('title'))} {anime.get('title')}", callback_data=f'detail_{anime.get("mal_id")}')] 
                     for anime in search_results[:10]]
         keyboard.extend([
-            [InlineKeyboardButton("• ғᴏʀ ", url='t.me/anime_raven'),
-             InlineKeyboardButton(" ᴍᴏʀᴇ •", url='t.me/anime_raven')],
+            [InlineKeyboardButton("• ғᴏʀ ", url='https://t.me/Xndroids'),
+             InlineKeyboardButton(" ᴍᴏʀᴇ •", url='https://t.me/Xndroids')],
             [InlineKeyboardButton("•  ᴄʟᴏsᴇ  •", callback_data='close')]
              ])
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -466,7 +466,7 @@ async def autoDelete_settings(client, message):
             )
     except Exception as e:
             reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("•  ᴄʟᴏsᴇ  •", callback_data = "close")]])
-            await message.reply(f"<b>! ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ..\n<blockquote>ʀᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @urr_sanjiii</i></b>", reply_markup=reply_markup)
+            await message.reply(f"<b>! ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ..\n<blockquote>ʀᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @metaui</i></b>", reply_markup=reply_markup)
 
 #Files related settings command
 @Bot.on_message(filters.command('files') & filters.private & ~banUser)
@@ -505,7 +505,7 @@ async def files_commands(client: Client, message: Message):
         )
     except Exception as e:
         reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("•  ᴄʟᴏsᴇ  •", callback_data = "close")]])
-        await message.reply(f"<b>! ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ..\n<blockquote>ʀᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @urr_sanjiii</i></b>", reply_markup=reply_markup)
+        await message.reply(f"<b>! ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ..\n<blockquote>ʀᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @metaui</i></b>", reply_markup=reply_markup)
 
 
 #Request force sub mode commad,,,,,,
@@ -529,7 +529,7 @@ async def handle_reqFsub(client: Client, message: Message):
 
     except Exception as e:
         reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("•  ᴄʟᴏsᴇ  •", callback_data = "close")]])
-        await message.reply(f"<b>! ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ..\n<blockquote>ʀᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @urr_sanjiii</i></b>", reply_markup=reply_markup)
+        await message.reply(f"<b>! ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ..\n<blockquote>ʀᴇᴀsᴏɴ:</b> {e}</blockquote><b><i>ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ: @metaui</i></b>", reply_markup=reply_markup)
 
 
 @Bot.on_message(filters.command('token') & filters.private & filters.user(OWNER_ID))
@@ -620,7 +620,7 @@ async def buy_premium_callback(client: Client, query: CallbackQuery):
             photo=premium_pic,
             caption=plans_text,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("👨‍💼 ᴏᴡɴᴇʀ", url="https://t.me/peldiya"),
+                [InlineKeyboardButton("👨‍💼 ᴏᴡɴᴇʀ", url="https://t.me/metaui"),
                  InlineKeyboardButton("📧 ᴀᴅᴍɪɴ", url="https://t.me/Urr_Sanjiii")],
                 [InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data="back_to_token")]
             ])
